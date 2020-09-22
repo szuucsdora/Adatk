@@ -14,4 +14,8 @@ meat_to_animal={
     'pulled pork': 'pig'
 }
 data['animal']=data['food'].map(str.lower).map(meat_to_animal)
-
+data.assign(new_variable = data['ounces]*10)
+data.drop('animal2',axis='columns',inplace=True)
+data
+data=pd.Series([1.,-99.,2.,-999.,-1000.,3.])
+data
